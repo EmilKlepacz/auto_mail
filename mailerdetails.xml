@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mailerDetails>
+
+    <smtpServerHost>smtp.gmail.com</smtpServerHost>
+
+    <serverPort>587</serverPort>
+
+    <username>klepaczemil@gmail.com</username>
+
+    <password>megadethhangar18</password>
+
+    
+</mailerDetails>

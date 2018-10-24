@@ -1,0 +1,9 @@
+Main.class
+MailerDetails.class
+EmailDetails.class
+JAXBXMLConverter.class
+Record.class
+ExcelReader.class
+AutoMailer.class
+EmailSender$1.class
+EmailSender.class

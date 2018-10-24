@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<emailDetails>
+
+    <from>klepaczemil@gmail.com</from>
+
+    <to>null</to>
+
+    <subject>null</subject>
+
+    <plainText>
+        Dzień Dobry,
+        Dziękujemy za udział w przedstawieniu.
+
+
+        Teatr Show 2018.
+    </plainText>
+
+    
+</emailDetails>
