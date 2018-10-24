@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ProgressBar?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem fx:id="openFromFileExcelItem" mnemonicParsing="false" onAction="#openFileChooserAndLoadToListFromXML" text="Load Excel file" />
+            <MenuItem fx:id="openFromFileTxtItem" mnemonicParsing="false" text="Load text file" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="Send">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Send to loaded list" />
+               </items>
+            </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ListView fx:id="recordListView" layoutX="41.0" layoutY="19.0" prefHeight="295.0" prefWidth="558.0" />
+            <ProgressBar layoutX="220.0" layoutY="333.0" prefHeight="18.0" prefWidth="200.0" progress="0.0" />
+         </children></AnchorPane>
+  </children>
+</VBox>

@@ -1,3 +1,5 @@
+package mail;
+
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -7,7 +9,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
@@ -34,9 +35,9 @@ public class ExcelReader {
 
     }
 
-    public ExcelReader(String fileLocation) {
+    public ExcelReader(File file) {
         try {
-            workbook = WorkbookFactory.create(new File(fileLocation));
+            workbook = WorkbookFactory.create(file);
         } catch (IOException | InvalidFormatException e) {
             e.printStackTrace();
         }

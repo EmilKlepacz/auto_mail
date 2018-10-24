@@ -1,3 +1,5 @@
+package mail;
+
 import java.io.File;
 import java.util.List;
 

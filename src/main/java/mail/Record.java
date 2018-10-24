@@ -1,3 +1,5 @@
+package mail;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 

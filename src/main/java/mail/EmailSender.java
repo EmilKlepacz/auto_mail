@@ -1,6 +1,6 @@
-import org.apache.log4j.BasicConfigurator;
+package mail;
+
 import org.apache.log4j.Logger;
-import org.simplejavamail.email.Email;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
