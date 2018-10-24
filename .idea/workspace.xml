@@ -171,6 +171,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -237,6 +240,7 @@
     <option name="width" value="1302" />
     <option name="height" value="766" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -377,12 +381,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540197767960</updated>
       <workItem from="1540197770699" duration="18897000" />
-      <workItem from="1540279809502" duration="26082000" />
+      <workItem from="1540279809502" duration="26404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44979000" />
+    <option name="totallyTimeSpent" value="45301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-356" y="-1088" width="1936" height="1096" extended-state="6" />
@@ -397,7 +401,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.141258" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27557412" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
