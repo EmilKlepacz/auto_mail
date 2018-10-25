@@ -50,15 +50,12 @@ public class EmailSender {
         }
     }
 
-    public void sendEmail() {
-        try {
-
-            log.info("Message send to " + Arrays.toString(message.getRecipients(Message.RecipientType.TO)));
+    public void sendEmail() throws MessagingException{
 
             Transport.send(message);
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        }
+            log.info("Message send to " + Arrays.toString(message.getRecipients(Message.RecipientType.TO)));
+
+
     }
 
 

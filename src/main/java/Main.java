@@ -4,15 +4,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import mail.XMLModifier;
 import org.apache.log4j.BasicConfigurator;
-
-import java.io.File;
 
 public class Main extends Application {
     private static final String XLSX_FILE_PATH = "mail_list.xlsx";
     private static final String WINDOW_TITLE = "Auto Mail";
-    private static final String MAIN_WINDOW_FXML_PATH = "mail/main_window.fxml";
+    private static final String MAIN_WINDOW_FXML_PATH = "mail/automail.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception {

@@ -2,6 +2,7 @@ package mail;
 
 import javafx.concurrent.Task;
 
+import javax.mail.MessagingException;
 import java.io.File;
 import java.util.List;
 
@@ -37,7 +38,7 @@ public class MailingTask extends Task<Object> {
     }
 
     @Override
-    protected Object call() throws Exception {
+    protected Object call(){
 
         setUpDefaultMailerDetailsFromXML();
         setUpDefaultEmailDetailsFromXML();
@@ -61,10 +62,17 @@ public class MailingTask extends Task<Object> {
 
                 emailSender.setMessage(emailDetails);
 
-                this.updateMessage("Sending to: " +  record.getEmailAddress());
-                emailSender.sendEmail();
 
-                sentMessages++;
+                try {
+                    emailSender.sendEmail();
+                    this.updateMessage("Sending to: " +  record.getEmailAddress());
+                    sentMessages++;
+                } catch (MessagingException e) {
+                    e.printStackTrace();
+                    this.updateMessage(e.getMessage());
+                }
+
+
                 this.updateProgress(sentMessages,count);
             }
         }

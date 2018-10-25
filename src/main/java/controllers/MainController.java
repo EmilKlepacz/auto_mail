@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 import javafx.scene.control.MenuItem;
 import mail.XMLModifier;
 
+import javax.mail.MessagingException;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -118,7 +119,9 @@ public class MainController {
                     labelProgressBar.setText("Sending finished");
                 });
 
-        new Thread(mailingTask).start();
+            new Thread(mailingTask).start();
+
+
     }
 
 }
