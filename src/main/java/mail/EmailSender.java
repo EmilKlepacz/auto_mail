@@ -1,5 +1,6 @@
 package mail;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 import javax.mail.*;
@@ -58,7 +59,6 @@ public class EmailSender {
         } catch (MessagingException e) {
             e.printStackTrace();
         }
-
     }
 
 

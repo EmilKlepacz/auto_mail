@@ -4,6 +4,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import mail.XMLModifier;
+import org.apache.log4j.BasicConfigurator;
+
+import java.io.File;
 
 public class Main extends Application {
     private static final String XLSX_FILE_PATH = "mail_list.xlsx";
@@ -25,13 +29,8 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        BasicConfigurator.configure();
         launch(args);
-
-//        ExcelReader excelReader = new ExcelReader(XLSX_FILE_PATH);
-//        List<Record> recordList = excelReader.loadRecordsToList();
-//
-//        AutoMailer autoMailer = new AutoMailer();
-//        autoMailer.sendToAllRecordsFromList(recordList);
 
     }
 }

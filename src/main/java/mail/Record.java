@@ -13,6 +13,16 @@ public class Record {
     private LocalDate showDate;
     private String url;
 
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    private String city;
+
     public String getUrl() {
         return url;
     }
@@ -99,6 +109,7 @@ public class Record {
                 ", emailAddress='" + emailAddress + '\'' +
                 ", showDate=" + showDate +
                 ", url='" + url + '\'' +
+                ", city='" + city + '\'' +
                 ", sendDateTime=" + sendDateTime +
                 '}';
     }

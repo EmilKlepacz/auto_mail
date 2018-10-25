@@ -83,16 +83,19 @@ public class ExcelReader {
             record.setRepertoire(cellsInCurrentRow.get(4));
             record.setEmailAddress(cellsInCurrentRow.get(5));
 
+
             DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd");
             record.setShowDate(LocalDate.parse(cellsInCurrentRow.get(6), format));
 
             record.setUrl(cellsInCurrentRow.get(7));
 
+            record.setCity(cellsInCurrentRow.get(8));
+
             cellsInCurrentRow.clear();
             recordList.add(record);
         }
 
-        BasicConfigurator.configure();
+
         logger.info("Records loaded from XML");
         return recordList;
     }

@@ -1,5 +1,7 @@
 package mail;
 
+import javafx.concurrent.Task;
+
 import java.io.File;
 import java.util.List;
 
@@ -28,25 +30,26 @@ public class AutoMailer {
         emailSender.setSession(mailerDetails);
     }
 
-    public void sendToAllRecordsFromList(List<Record> recordList){
 
-        setUpDefaultMailerDetailsFromXML();
-        setUpDefaultEmailDetailsFromXML();
-        setUpEmailSender();
-
-        String emailDefaultPlainText = emailDetails.getPlainText();
-
-        for (Record record: recordList){
-            emailDetails.setSubject("Relacja z przedstawienia " + record.getRepertoire() +
-                    " z dnia " + record.getShowDate()
-                    + " dla P. " + record.getReceiver()
-                    + " (" + record.getSchoolName() + ")" );
-
-            emailDetails.setPlainText(emailDefaultPlainText + "\n\n link do filmu: " + record.getUrl());
-            emailDetails.setTo(record.getEmailAddress());
-
-            emailSender.setMessage(emailDetails);
-            emailSender.sendEmail();
-        }
-    }
+//    public void sendToAllRecordsFromList(List<Record> recordList){
+//
+//        setUpDefaultMailerDetailsFromXML();
+//        setUpDefaultEmailDetailsFromXML();
+//        setUpEmailSender();
+//
+//        String emailDefaultPlainText = emailDetails.getPlainText();
+//
+//        for (Record record: recordList){
+//            emailDetails.setSubject("Relacja z przedstawienia " + record.getRepertoire() +
+//                    " z dnia " + record.getShowDate()
+//                    + " dla P. " + record.getReceiver()
+//                    + " (" + record.getSchoolName() + ")" );
+//
+//            emailDetails.setPlainText(emailDefaultPlainText + "\n\n link do filmu: " + record.getUrl());
+//            emailDetails.setTo(record.getEmailAddress());
+//
+//            emailSender.setMessage(emailDetails);
+//            emailSender.sendEmail();
+//        }
+//    }
 }
