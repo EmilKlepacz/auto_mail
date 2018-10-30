@@ -2,6 +2,7 @@ package mail;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Objects;
 
 @XmlRootElement
 public class EmailDetails {
@@ -56,4 +57,23 @@ public class EmailDetails {
                 ", plainText='" + plainText + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        EmailDetails that = (EmailDetails) o;
+        return Objects.equals(from, that.from) &&
+                Objects.equals(to, that.to) &&
+                Objects.equals(subject, that.subject) &&
+                Objects.equals(plainText, that.plainText);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(from, to, subject, plainText);
+    }
+
+
 }

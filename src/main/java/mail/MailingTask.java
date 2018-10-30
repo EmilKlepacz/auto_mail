@@ -20,6 +20,7 @@ public class MailingTask extends Task<Object> {
     private void setUpDefaultEmailDetailsFromXML(){
         JAXBXMLConverter jaxbxmlConverter = new JAXBXMLConverter();
         emailDetails = jaxbxmlConverter.convertToEmailDetailsFromXML(new File(XML_EMAIL_DETAILS_PATH));
+
     }
 
     private void setUpDefaultMailerDetailsFromXML(){

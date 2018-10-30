@@ -9,7 +9,7 @@ import org.apache.log4j.BasicConfigurator;
 public class Main extends Application {
     private static final String XLSX_FILE_PATH = "mail_list.xlsx";
     private static final String WINDOW_TITLE = "Auto Mail";
-    private static final String MAIN_WINDOW_FXML_PATH = "mail/automail.fxml";
+    private static final String MAIN_WINDOW_FXML_PATH = "mail/automailwindow.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception {
